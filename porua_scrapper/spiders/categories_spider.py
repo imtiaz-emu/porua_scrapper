@@ -1,7 +1,6 @@
 import scrapy
 from porua_scrapper.items import Category
 from porua_scrapper.config import SITE_URL
-import json
 
 
 class CategoriesSpider(scrapy.Spider):
@@ -23,5 +22,5 @@ class CategoriesSpider(scrapy.Spider):
             categoryObj['name'] = category.css('div.bookSubjectCaption h2::text').extract_first()
             categoryObj['url'] = category.css('a::attr(href)').extract_first()
 
-            yield json.loads(categoryObj)
+            yield categoryObj
 
