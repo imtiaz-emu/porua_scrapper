@@ -24,8 +24,9 @@ class SubCategory(scrapy.Item):
 class Author(scrapy.Item):
     name = scrapy.Field()
     url = scrapy.Field()
-    photo = scrapy.Field()
-    biodata = scrapy.Field()
+    image_urls = scrapy.Field()
+    iamges = scrapy.Field()
+    shortDes = scrapy.Field()
 
 
 
