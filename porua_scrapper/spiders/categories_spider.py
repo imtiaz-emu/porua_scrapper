@@ -7,7 +7,7 @@ class CategoriesSpider(scrapy.Spider):
     name = "categories"
     start_urls = []
     for I in range(2):
-        url = SITE_URL + "book/categories?page=" + str(I+1)
+        url = SITE_URL + "/book/categories?page=" + str(I+1)
         start_urls.append(url)
 
     print(start_urls)
