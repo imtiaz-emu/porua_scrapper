@@ -67,7 +67,8 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
    'scrapy.contrib.pipeline.images.FilesPipeline': 1,
 }
-FILES_STORE = "/home/emu/PyCharmProjects/porua_scrapper/authors/"
+#FILES_STORE = "/home/emu/PyCharmProjects/porua_scrapper/authors/"
+FILES_STORE = "./data/"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

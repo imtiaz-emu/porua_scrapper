@@ -1,3 +1,4 @@
 /porua_scrapper/config.py
 /.idea
 *.pyc
+*.json
