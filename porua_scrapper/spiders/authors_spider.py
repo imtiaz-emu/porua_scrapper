@@ -4,6 +4,7 @@ from porua_scrapper.config import SITE_URL
 from scrapy.selector import HtmlXPathSelector
 import pdb
 
+
 class AuthorsSpider(scrapy.Spider):
     name = "authors"
     site_link = SITE_URL + '/book/authors'

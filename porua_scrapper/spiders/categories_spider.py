@@ -12,7 +12,6 @@ class CategoriesSpider(scrapy.Spider):
 
     print(start_urls)
 
-
     def parse(self, response):
         # print(response.css('ul.categoryList li div.pFIrstCatCaroItem a').extract_first())
 
