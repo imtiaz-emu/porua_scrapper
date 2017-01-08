@@ -1,9 +1,7 @@
-import scrapy
+import scrapy, json, pdb
 from porua_scrapper.items import Author
 from porua_scrapper.config import SITE_URL
 from scrapy.selector import HtmlXPathSelector
-import json
-import pdb
 
 
 class AuthorDetailsSpider(scrapy.Spider):

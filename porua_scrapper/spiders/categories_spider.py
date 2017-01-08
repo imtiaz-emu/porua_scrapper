@@ -16,10 +16,10 @@ class CategoriesSpider(scrapy.Spider):
         # print(response.css('ul.categoryList li div.pFIrstCatCaroItem a').extract_first())
 
         for category in response.css('ul.categoryList li'):
-            categoryObj = Category()
+            category_obj = Category()
 
-            categoryObj['name'] = category.css('div.bookSubjectCaption h2::text').extract_first()
-            categoryObj['url'] = category.css('a::attr(href)').extract_first()
+            category_obj['name'] = category.css('div.bookSubjectCaption h2::text').extract_first()
+            category_obj['url'] = SITE_URL + category.css('a::attr(href)').extract_first()
 
-            yield categoryObj
+            yield category_obj
 
